@@ -1,6 +1,6 @@
 # flutter_fundamental_3
 
-#Rajendra Rakha A P
+# Rajendra Rakha A P
 
 Praktikum 1: Menerapkan Gesture Detector
 

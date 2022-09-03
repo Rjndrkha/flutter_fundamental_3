@@ -35,12 +35,14 @@ class _FormContohState extends State<FormContoh> {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           const Text(
-            'Teks :',
+            'Show Inputted Text :',
           ),
           Text(
             _textValue,
             style: Theme.of(context).textTheme.headline3,
           ),
+
+          //TEXT INPUT DAN VALIDATOR
           TextFormField(
             controller: _controller,
             validator: (String? value) {
@@ -49,7 +51,7 @@ class _FormContohState extends State<FormContoh> {
                   : null;
             },
           ),
-          TextFormField(),
+          //TextFormField(),
           Builder(
             builder: (BuildContext subContext) => TextButton(
               onPressed: () {

@@ -33,6 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+
   final TextEditingController _controller = TextEditingController.fromValue(
       const TextEditingValue(text: "isi angka saja"));
 
@@ -56,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                // const MyImageWidget(),
+                const MyImageWidget(),
                 const Text(
                   'You have pushed the button this many times:',
                 ),
@@ -75,8 +76,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                     child: const Text("validate"),
                   ),
-                )
-                // const FormContoh(),
+                ),
+                const FormContoh(),
               ],
             )),
       ),

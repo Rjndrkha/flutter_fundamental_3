@@ -32,3 +32,9 @@ Praktikum 3: Menerapkan Custom Input dan FormField Widget
 ![Praktikum3_1](images/Praktikum3_1.png)
 ![Praktikum3_2](images/Praktikum3_2.png)
 ![Praktikum3_3](images/Praktikum3_3.png)
+
+Menampilkan Semua Praktikum
+
+![Screenshot (2504)](https://user-images.githubusercontent.com/75615789/188253202-1c476bca-82b7-463b-af4d-94ae1ec86619.png)
+
+

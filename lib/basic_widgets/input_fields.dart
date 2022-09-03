@@ -51,7 +51,8 @@ class VerificationCodeFormField extends FormField<String> {
           key: key,
           validator: validator,
           builder: (FormFieldState<String> field) {
-            _VerificationCodeFormFieldState state = field as _VerificationCodeFormFieldState;
+            _VerificationCodeFormFieldState state =
+                field as _VerificationCodeFormFieldState;
             return VerificationCodeInput(
               controller: state._controller,
             );

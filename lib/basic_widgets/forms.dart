@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class FormContoh extends StatefulWidget {
@@ -9,9 +10,12 @@ class FormContoh extends StatefulWidget {
 
 class _FormContohState extends State<FormContoh> {
   final _controller = TextEditingController.fromValue(
-      const TextEditingValue(text: "Initial Value"));
+    const TextEditingValue(text: "Initial value"),
+  );
+
   final _key = GlobalKey<FormFieldState<String>>();
   String _textValue = "";
+
   @override
   void initState() {
     _controller.addListener(() {
@@ -24,8 +28,7 @@ class _FormContohState extends State<FormContoh> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
+  Widget build(BuildContext topContext) {
     return Form(
       key: _key,
       child: Column(
@@ -51,7 +54,7 @@ class _FormContohState extends State<FormContoh> {
             builder: (BuildContext subContext) => TextButton(
               onPressed: () {
                 final valid = Form.of(subContext)!.validate();
-                if (valid) {
+                if (kDebugMode) {
                   print("valid: $valid");
                 }
                 if (valid) {
